@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
-import { ScanResponse } from '../types';
+// Corrected import path from '../types' to './types.ts' as the file is in the root directory
+import { ScanResponse } from './types.ts';
 
 export const ScanSimulator: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
